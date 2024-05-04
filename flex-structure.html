@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .flex-container {
+        flex-direction: column;
+        border: 1px solid gray;
+        display: flex;
+        background-color: rgb(205, 201, 201);
+        width: 800px;
+        height: 500px;
+      }
+      .flex-container2 {
+        display: flex;
+        border: 1px solid gray;
+        height: 400px;
+        background-color: antiquewhite;
+        flex-direction: row;
+      }
+
+      h1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: large;
+      }
+
+      h2 {
+        font-size: large;
+      }
+      .flex-item-left {
+        text-align: center;
+        text-wrap: wrap;
+        width: 100%;
+      }
+
+      .flex-item-right {
+        background-color: rgb(120, 171, 120);
+      }
+
+      .flexp {
+        background-color: rgb(231, 189, 139);
+        padding: 20px;
+        flex-grow: 1;
+        text-align: center;
+      }
+      .flexpp {
+        width: 100%;
+      }
+
+      h4 {
+        background-color: rgb(246, 244, 242);
+        text-align: center;
+        padding: 20px;
+      }
+
+      .flex-container3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        height: 100px;
+      }
+
+      .flex-container4 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <h1>[Шапка страницы]</h1>
+
+      <div class="flex-container2">
+        <div class="flex-container4">
+          <h2 class="flex-item-left">[Основная часть]</h2>
+          <p class="flexp">Еще 1</p>
+          <p class="flexp">Еще 2</p>
+          <p class="flexp flexpp">Еще 3</p>
+        </div>
+        <h2 class="flex-item-right">[Боковая часть]</h2>
+      </div>
+
+      <div class="flex-container3">
+        <h4>[Секция футера 1]</h4>
+        <h4>[Секция футера 2]</h4>
+        <h4>[Секция футера 3]</h4>
+        <h4>[Секция футера 4]</h4>
+      </div>
+    </div>
+  </body>
+</html>
